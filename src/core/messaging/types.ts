@@ -16,7 +16,6 @@ export type DestinationNode =
 export interface IDestination {
   id: string;
   node: DestinationNode;
-  type: string;
 }
 
 export interface IMessage {

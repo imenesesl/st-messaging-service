@@ -28,7 +28,6 @@ The endpoint expects a JSON payload structured according to the `FieldsDto` defi
     "destination": {
       "id": "<Destination ID>",
       "node": "<Destination Node>",
-      "type": "direct"
     },
     "message": {
       "text": "<Message Content>",

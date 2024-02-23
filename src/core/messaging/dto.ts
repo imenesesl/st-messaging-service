@@ -27,12 +27,6 @@ export class DestinationDto implements IDestination {
   @IsString()
   @IsIn(['guardians', 'workspaces', 'tutors', 'channels', 'threads'])
   node: DestinationNode;
-
-  @ApiProperty()
-  @IsNotEmpty()
-  @IsString()
-  @IsIn(['direct'])
-  type: string;
 }
 
 export class MessageDto implements IMessage {

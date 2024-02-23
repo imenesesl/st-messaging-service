@@ -25,7 +25,7 @@ export class MessagingService {
 
     if (!bond) bond = await this.bondAPI.get(path, sender, destination);
 
-    const destinationPath = `${path}/history/${bond}/${destination.type}`;
+    const destinationPath = `${path}/history/${bond}/messages`;
 
     return this.dbCollectionService.createDocument(destinationPath, {
       text: message.text,

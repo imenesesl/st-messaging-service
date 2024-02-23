@@ -4,7 +4,7 @@ import { FilterWhere, Options } from './types';
 
 @Injectable()
 export class DBCollectionService {
-  db = FirebaseEngine.firestore();
+  private db = FirebaseEngine.firestore();
 
   async createDocument<T>(collection: string, data: T): Promise<string> {
     const doc = await this.db.collection(collection).add(data);
